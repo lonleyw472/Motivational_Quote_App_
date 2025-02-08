@@ -1,38 +1,30 @@
-/* Style for the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #f0f8ff;
     text-align: center;
     padding: 50px;
 }
 
-/* Style for the title */
 h1 {
     color: #333;
+    font-size: 36px;
 }
 
-/* Style for the quote */
 #quote {
     font-size: 24px;
     color: #555;
-    margin-top: 20px;
-    font-style: italic;  /* Optional: italicize the quote */
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc; /* Add a border to make the quote stand out */
-    width: 80%;
-    margin: 20px auto;  /* Center the quote div */
+    font-style: italic;
 }
 
-/* Button styling */
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
 }
 
+button:hover {
+    background-color: #45a049;
+}
 
