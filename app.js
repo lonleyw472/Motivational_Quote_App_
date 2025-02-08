@@ -6,7 +6,8 @@ async function fetchQuote() {
 }catch (error) {
         console.error("Error fetching quote: ", error);
         document.getElementById('quote').textContent = "Failed to load quote, please try again.";
-
+}
+}
 // Call the function when the page loads
 fetchQuote();
 
