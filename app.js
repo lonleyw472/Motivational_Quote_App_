@@ -12,3 +12,5 @@ fetchQuote();
 function newQuote() {
     fetchQuote();
 }
+// Event listener for the button to load a new quote
+document.querySelector("button").addEventListener("click", fetchQuote);
