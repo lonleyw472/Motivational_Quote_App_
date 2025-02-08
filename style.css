@@ -1,25 +1,40 @@
+/* Global body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff;  /* Light blue background */
     text-align: center;
     padding: 50px;
+    margin: 0;
+    height: 100vh; /* Make sure the body takes the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
+/* Header (h1) styling */
 h1 {
     color: #333;
+    font-size: 36px; /* Making the title a bit larger */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
+/* Quote text styling */
 #quote {
     font-size: 24px;
     color: #555;
+    margin: 20px 0; /* Add space between quote and button */
 }
 
+/* Button styling */
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color change */
 }
 
 button:hover {
