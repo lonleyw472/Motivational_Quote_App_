@@ -8,8 +8,10 @@
 </head>
 <body>
     <h1>Motivational Quote</h1>
-    <div id="quote" class="quote"></div>
-    <button onclick="newQuote()">New Quote</button>
+    <div id="quote-container">
+        <p id="quote">Loading quote...</p>
+    </div>
+    <button onclick="fetchQuote()">New Quote</button>
 
     <script src="app.js"></script>
 </body>
