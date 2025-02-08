@@ -12,7 +12,7 @@ function newQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     
     // Update the quote text on the webpage
-    document.getElementById('quote').textContent = quotes[randomIndex];
+    document.getElementById('quote').textContent = `"${quotes[randomIndex]}"`;
 }
 
 // Optional: Call newQuote when the page loads to show the first quote
