@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivational Quotes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Motivational Quote App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Motivational Quote</h1>
-    <p id="quote">"The best way to get started is to quit talking and begin doing." – Walt Disney</p>
-    <button onclick="newQuote()">Get New Quote</button>
-    <script src="app.js"></script>
+    <div id="quote-container">
+        <p id="quote">Loading your motivational quote...</p>
+        <button onclick="newQuote()">Get New Quote</button>
+    </div>
+
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
