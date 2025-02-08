@@ -1,11 +1,14 @@
-const quotes = [
-    "The best way to get started is to quit talking and begin doing. – Walt Disney",
-    "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty. – Winston Churchill",
-    "Don’t let yesterday take up too much of today. – Will Rogers",
-    "It’s not whether you get knocked down, it’s whether you get up. – Vince Lombardi"
-];
+// Fetch random quote from Quotable API
+async function fetchQuote() {
+    const response = await fetch('https://api.quotable.io/random');
+    const data = await response.json();
+    document.getElementById('quote').textContent = `${data.content} – ${data.author}`;
+}
 
+// Call the function when the page loads
+fetchQuote();
+
+// Call fetchQuote function on button click to get a new quote
 function newQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById('quote').textContent = quotes[randomIndex];
+    fetchQuote();
 }
