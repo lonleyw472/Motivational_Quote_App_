@@ -11,7 +11,7 @@ function newQuote() {
     // Get a random index from the quotes array
     const randomIndex = Math.floor(Math.random() * quotes.length);
     
-    // Update the quote text on the webpage
+    // Update the quote text on the webpage with double quotes
     document.getElementById('quote').textContent = `"${quotes[randomIndex]}"`;
 }
 
