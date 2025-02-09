@@ -1,73 +1,38 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
     text-align: center;
+    padding: 50px;
+    transition: background-image 0.5s ease;
 }
 
-h1 {
-    color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
+/* Style for quote container */
 #quote {
     font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-}
-
-select, button {
-    margin: 10px 0;
+    color: #555;
+    margin-top: 20px;
+    font-style: italic;
     padding: 10px;
-    font-size: 16px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
 }
 
-select {
-    background-color: #e0e0e0;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
+/* Different background images for different categories */
 body.success {
-    background-color: #e8f5e9;
+    background-image: url('success-bg.jpg'); /* Change with your own image */
 }
 
 body.life {
-    background-color: #fff9c4;
+    background-image: url('life-bg.jpg'); /* Change with your own image */
 }
 
 body.love {
-    background-color: #fce4ec;
+    background-image: url('love-bg.jpg'); /* Change with your own image */
 }
 
 body.inspiration {
-    background-color: #e3f2fd;
+    background-image: url('inspiration-bg.jpg'); /* Change with your own image */
 }
+
