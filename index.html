@@ -8,13 +8,20 @@
 </head>
 <body>
     <h1>Motivational Quote</h1>
-    <div id="quote" class="quote">Click the button to get a motivational quote!</div>
-    <button onclick="newQuote()">New Quote</button>
+    
+    <!-- Dropdown for categories -->
+    <select id="category" onchange="newQuote()">
+        <option value="all">All Quotes</option>
+        <option value="success">Success</option>
+        <option value="life">Life</option>
+        <option value="love">Love</option>
+        <option value="inspiration">Inspiration</option>
+    </select>
 
-    <noscript>
-        <p style="color: red;">JavaScript is required to display quotes.</p>
-    </noscript>
+    <div id="quote" class="quote"></div>
+    <button onclick="newQuote()">New Quote</button>
 
     <script src="app.js"></script>
 </body>
 </html>
+
