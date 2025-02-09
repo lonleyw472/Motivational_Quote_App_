@@ -80,4 +80,16 @@ body.inspiration {
     background-image: url('https://example.com/inspiration-image.jpg'); /* Replace with actual URL */
 }
 
+/* Quote fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+#quote {
+    animation: fadeIn 1s ease-in-out;
+}
