@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
@@ -8,27 +9,33 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    background-size: cover; /* Ensure background covers the entire viewport */
+    background-position: center; /* Center the background image */
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
 }
 
+/* Title styling */
 h1 {
     color: #333;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
+/* Quote box styling */
 #quote {
     font-size: 24px;
     font-weight: bold;
     color: #333;
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent background for readability */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
 }
 
+/* Dropdown and Button styling */
 select, button {
     margin: 10px 0;
     padding: 10px;
@@ -56,19 +63,21 @@ button:active {
     transform: scale(0.98);
 }
 
+/* Category-specific background styles */
 body.success {
-    background-color: #e8f5e9;
+    background-image: url('https://example.com/success-image.jpg'); /* Replace with actual URL */
 }
 
 body.life {
-    background-color: #fff9c4;
+    background-image: url('https://example.com/life-image.jpg'); /* Replace with actual URL */
 }
 
 body.love {
-    background-color: #fce4ec;
+    background-image: url('https://example.com/love-image.jpg'); /* Replace with actual URL */
 }
 
 body.inspiration {
-    background-color: #e3f2fd;
+    background-image: url('https://example.com/inspiration-image.jpg'); /* Replace with actual URL */
 }
+
 
