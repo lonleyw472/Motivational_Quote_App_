@@ -64,20 +64,32 @@ button:active {
 }
 
 /* Category-specific background styles */
+/* Success background */
 body.success {
-    background-image: url('https://example.com/success-image.jpg'); /* Replace with actual URL */
+    background-image: url('https://images.unsplash.com/photo-1511223453874-8695a9f9d1c9');
+    background-size: cover;
+    background-position: center;
 }
 
-body.life {
-    background-image: url('https://example.com/life-image.jpg'); /* Replace with actual URL */
-}
-
+/* Love background */
 body.love {
-    background-image: url('https://example.com/love-image.jpg'); /* Replace with actual URL */
+    background-image: url('https://images.unsplash.com/photo-1506374637021-b773171510fa');
+    background-size: cover;
+    background-position: center;
 }
 
+/* Life background */
+body.life {
+    background-image: url('https://images.unsplash.com/photo-1473181462524-fbc07345f226');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Inspiration background */
 body.inspiration {
-    background-image: url('https://example.com/inspiration-image.jpg'); /* Replace with actual URL */
+    background-image: url('https://images.unsplash.com/photo-1533923430652-0a1fd7b06a2e');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Quote fade-in animation */
