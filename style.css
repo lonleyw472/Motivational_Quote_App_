@@ -22,18 +22,22 @@ body {
 
 /* Different background images for different categories */
 body.success {
-    background-image: url('success-bg.jpg');
+    background-color: #90EE90; /* Light green for success */
 }
 
 body.life {
-    background-image: url('life-bg.jpg');
+    background-color: #FFEB3B; /* Yellow for life */
 }
 
 body.love {
-    background-image: url('love-bg.jpg');
+    background-color: #FFB6C1; /* Light pink for love */
 }
 
 body.inspiration {
-    background-image: url('inspiration-bg.jpg');
+    background-color: #87CEEB; /* Sky blue for inspiration */
+}
+
+body.all {
+    background-color: #f0f8ff; /* Light blue for all categories */
 }
 
