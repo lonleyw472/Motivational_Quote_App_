@@ -1,49 +1,42 @@
+/* Style for the body */
 body {
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 50px;
 }
 
-.quote-container {
-  text-align: center;
-  width: 80%;
-  max-width: 600px;
+/* Style for the title */
+h1 {
+    color: #333;
 }
 
-.quote-text {
-  font-size: 2em;
-  font-weight: bold;
-  font-style: italic;
-  color: #2c3e50;
-  line-height: 1.5;
-  word-wrap: break-word;
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #ff6f61, #f7b7a3);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Style for the quote */
+#quote {
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    font-style: italic;  /* Optional: italicize the quote */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add a border to make the quote stand out */
+    width: 80%;
+    margin: 20px auto;  /* Center the quote div */
 }
 
-.quote-text::before {
-  content: '"';
-  font-size: 3em;
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  color: #ff6f61;
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
-.quote-text::after {
-  content: '"';
-  font-size: 3em;
-  position: absolute;
-  top: -20px;
-  right: 10px;
-  color: #ff6f61;
+button:hover {
+    background-color: #45a049;
 }
+
 
