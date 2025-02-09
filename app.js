@@ -84,25 +84,25 @@ const quotes = {
     life: [],
     love: [],
     inspiration: []
-];
+};
 
+// Function to handle showing a random quote based on category
 function newQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById('quote').textContent = `"${quotes[randomIndex]}"`;
+    const category = document.getElementById('category').value;
+    let selectedQuotes = quotes[category];
 
-    // Update the background based on the selected category
-    const selectedCategory = document.getElementById('categorySelect').value;
-    document.body.className = selectedCategory;  // Dynamically apply the class to the body
-}
+    // Randomly select a quote
+    const randomIndex = Math.floor(Math.random() * selectedQuotes.length);
+    const quoteText = selectedQuotes[randomIndex];
+    
+    // Change background color based on category
+    document.body.className = category;  // Adds the corresponding class (success, life, etc.)
 
-// Function to handle category change
-function categoryChanged() {
-    const selectedCategory = document.getElementById('categorySelect').value;
-    document.body.className = selectedCategory;  // Apply the new class to the body
+    // Display the quote
+    document.getElementById('quote').textContent = `"${quoteText}"`;
 }
 
 // Optional: Call newQuote when the page loads to show the first quote
 window.onload = newQuote;
-
 
 
