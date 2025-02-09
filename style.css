@@ -18,26 +18,21 @@ body {
     width: 80%;
     margin: 20px auto;
 }
-
 /* Different background images for different categories */
 body.success {
-    background-color: #90EE90; /* Light green for success */
+    background-image: url('success-bg.jpg');
 }
 
 body.life {
-    background-color: #FFEB3B; /* Yellow for life */
+    background-image: url('life-bg.jpg');
 }
 
 body.love {
-    background-color: #FFB6C1; /* Light pink for love */
+    background-image: url('love-bg.jpg');
 }
 
 body.inspiration {
-    background-color: #87CEEB; /* Sky blue for inspiration */
-}
-
-body.all {
-    background-color: #f0f8ff; /* Light blue for all categories */
+    background-image: url('inspiration-bg.jpg');
 }
 
 
