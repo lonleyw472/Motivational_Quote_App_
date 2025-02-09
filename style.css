@@ -1,51 +1,55 @@
+/* General body styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
-    margin-top: 50px;
-}
-
-#quoteContainer {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+/* Center the quote box and quote text */
+.quote-box {
+    text-align: center; /* Ensure the quote text is centered */
     padding: 20px;
-    font-size: 1.5rem;
-    font-weight: bold; /* Make the quote bold */
-    color: #333;
-    margin: 30px auto;
-    max-width: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    max-width: 90%;
+    margin-bottom: 20px;
 }
 
-#quoteContainer:hover {
-    transform: scale(1.05); /* Hover effect for the quote box */
+/* Button container styles */
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons in the center */
+    gap: 20px; /* Space between the buttons */
+    flex-wrap: wrap;
 }
 
-button {
-    background-color: #007BFF;
+/* Button styles */
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+.button-container button:hover {
     background-color: #0056b3;
 }
+
+/* Optional: Make sure the page content doesn't overflow */
+html, body {
+    overflow: hidden;
+}
+
 
