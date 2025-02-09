@@ -178,4 +178,19 @@ function newQuote() {
 // Optional: Call newQuote when the page loads to show the first quote
 window.onload = newQuote;
 
-
+// Example event listener to switch categories (you would attach this to buttons or a menu)
+document.getElementById("allCategoryBtn").addEventListener("click", function() {
+    changeCategory("all");
+});
+document.getElementById("successCategoryBtn").addEventListener("click", function() {
+    changeCategory("success");
+});
+document.getElementById("lifeCategoryBtn").addEventListener("click", function() {
+    changeCategory("life");
+});
+document.getElementById("loveCategoryBtn").addEventListener("click", function() {
+    changeCategory("love");
+});
+document.getElementById("inspirationCategoryBtn").addEventListener("click", function() {
+    changeCategory("inspiration");
+});
