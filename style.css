@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
@@ -21,18 +22,18 @@ body {
 
 /* Different background images for different categories */
 body.success {
-    background-image: url('success-bg.jpg'); /* Change with your own image */
+    background-image: url('success-bg.jpg');
 }
 
 body.life {
-    background-image: url('life-bg.jpg'); /* Change with your own image */
+    background-image: url('life-bg.jpg');
 }
 
 body.love {
-    background-image: url('love-bg.jpg'); /* Change with your own image */
+    background-image: url('love-bg.jpg');
 }
 
 body.inspiration {
-    background-image: url('inspiration-bg.jpg'); /* Change with your own image */
+    background-image: url('inspiration-bg.jpg');
 }
 
