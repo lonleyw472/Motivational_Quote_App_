@@ -3,33 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivational Quotes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        #quote {
-            font-size: 24px;
-            font-weight: bold; /* Makes the quote bold */
-            font-style: italic; /* Makes the quote curve */
-            color: #333; /* Default color */
-            padding: 10px;
-        }
-        
-        #author {
-            font-size: 20px;
-            font-weight: normal; /* Keeps the author normal */
-            color: #777;
-        }
-    </style>
+    <title>Motivational Quote App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="quote"></div>
-    <div id="author"></div>
+    <h1>Motivational Quote</h1>
+    <div id="quote" class="quote"></div>
+    <button onclick="newQuote()">New Quote</button>
 
-    <script src="quotes.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
