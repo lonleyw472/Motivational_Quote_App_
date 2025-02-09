@@ -59,4 +59,11 @@ body.inspiration {
     background-image: url('inspiration-bg.jpg');
 }
 
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?inspiration');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
 
