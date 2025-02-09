@@ -1,38 +1,14 @@
-/* General body styling */
+/* Style for the body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     text-align: center;
     padding: 50px;
-    transition: background-image 0.5s ease;
-}
-
-/* Success background */
-body.success {
-    background-image: url('https://images.unsplash.com/photo-1511223453874-8695a9f9d1c9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
-    background-size: cover;
+    background-image: url('https://example.com/path-to-your-background-image.jpg');
+    background-size: cover; /* Makes sure the background covers the entire screen */
     background-position: center;
-}
-
-/* Love background */
-body.love {
-    background-image: url('https://images.unsplash.com/photo-1506374637021-b773171510fa?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Life background */
-body.life {
-    background-image: url('https://images.unsplash.com/photo-1473181462524-fbc07345f226?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Inspiration background */
-body.inspiration {
-    background-image: url('https://images.unsplash.com/photo-1533923430652-0a1fd7b06a2e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
-    background-size: cover;
-    background-position: center;
+    background-attachment: fixed; /* Keeps background fixed on scroll */
+    color: white; /* Make the text readable on the background */
 }
 
 /* Style for the title */
@@ -51,7 +27,7 @@ h1 {
     border: 1px solid #ccc;
     width: 80%;
     margin: 20px auto;
-    font-weight: bold; /* Make the quote bold */
+    font-weight: bold; /* Bold the quote */
 }
 
 /* Button styling */
