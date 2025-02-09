@@ -8,9 +8,8 @@
 </head>
 <body>
     <h1>Motivational Quote</h1>
-    <div id="quote" class="quote"></div>
     
-    <!-- Dropdown to select categories -->
+    <!-- Dropdown for categories -->
     <select id="category" onchange="newQuote()">
         <option value="all">All Quotes</option>
         <option value="success">Success</option>
@@ -19,6 +18,7 @@
         <option value="inspiration">Inspiration</option>
     </select>
 
+    <div id="quote" class="quote"></div>
     <button onclick="newQuote()">New Quote</button>
 
     <script src="app.js"></script>
