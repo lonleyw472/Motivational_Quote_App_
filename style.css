@@ -1,107 +1,70 @@
-/* General body styles */
+/* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
     text-align: center;
-    background-size: cover; /* Ensure background covers the entire viewport */
-    background-position: center; /* Center the background image */
-    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+    padding: 50px;
+    transition: background-image 0.5s ease;
 }
 
-/* Title styling */
-h1 {
-    color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Quote box styling */
-#quote {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Transparent background for readability */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-}
-
-/* Dropdown and Button styling */
-select, button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-select {
-    background-color: #e0e0e0;
-}
-
-button {
-    background-color: #4caf50;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-/* Category-specific background styles */
 /* Success background */
 body.success {
-    background-image: url('https://images.unsplash.com/photo-1511223453874-8695a9f9d1c9');
+    background-image: url('https://images.unsplash.com/photo-1511223453874-8695a9f9d1c9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
     background-size: cover;
     background-position: center;
 }
 
 /* Love background */
 body.love {
-    background-image: url('https://images.unsplash.com/photo-1506374637021-b773171510fa');
+    background-image: url('https://images.unsplash.com/photo-1506374637021-b773171510fa?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
     background-size: cover;
     background-position: center;
 }
 
 /* Life background */
 body.life {
-    background-image: url('https://images.unsplash.com/photo-1473181462524-fbc07345f226');
+    background-image: url('https://images.unsplash.com/photo-1473181462524-fbc07345f226?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
     background-size: cover;
     background-position: center;
 }
 
 /* Inspiration background */
 body.inspiration {
-    background-image: url('https://images.unsplash.com/photo-1533923430652-0a1fd7b06a2e');
+    background-image: url('https://images.unsplash.com/photo-1533923430652-0a1fd7b06a2e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fHx8fGVufDB8fHx8fHx8fHx8fHx8fHwxNjgwOTQ4MjM4&ixlib=rb-1.2.1&q=80&w=1080');
     background-size: cover;
     background-position: center;
 }
 
-/* Quote fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* Style for the title */
+h1 {
+    color: #333;
 }
 
+/* Style for the quote */
 #quote {
-    animation: fadeIn 1s ease-in-out;
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+    font-weight: bold; /* Make the quote bold */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
