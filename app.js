@@ -78,7 +78,6 @@ const quotes = [
 
 
 ];
-
 // Function to display a new quote
 function newQuote() {
     // Get a random index from the quotes array
@@ -88,5 +87,7 @@ function newQuote() {
     document.getElementById('quote').textContent = `"${quotes[randomIndex]}"`;
 }
 
-// Call newQuote when the page loads to show the first quote
+// Optional: Call newQuote when the page loads to show the first quote
 window.onload = newQuote;
+
+
