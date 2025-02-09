@@ -76,18 +76,33 @@ const quotes = [
   "A journey of a thousand miles begins with a single step. – Lao Tzu",
   "Work hard in silence, let success make the noise. – Frank Ocean"
 
-
 ];
+
+// Variable to store the last used index
+let lastIndex = -1;
+
 // Function to display a new quote
 function newQuote() {
-    // Get a random index from the quotes array
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    
-    // Update the quote text on the webpage, wrapping it in double quotes
-    document.getElementById('quote').textContent = `"${quotes[randomIndex]}"`;
+    let randomIndex;
+
+    // Prevent the same quote from appearing consecutively
+    do {
+        randomIndex = Math.floor(Math.random() * quotes.length);
+    } while (randomIndex === lastIndex);
+
+    lastIndex = randomIndex; // Update lastIndex with the new one
+
+    // Add fade-in effect
+    const quoteElement = document.getElementById('quote');
+    quoteElement.style.opacity = "0"; // Fade out
+    setTimeout(() => {
+        quoteElement.innerHTML = `&ldquo;${quotes[randomIndex]}&rdquo;`; // Change the quote
+        quoteElement.style.opacity = "1"; // Fade in
+    }, 300); // Delay before updating quote
 }
 
-// Optional: Call newQuote when the page loads to show the first quote
+// Show a quote when the page loads
 window.onload = newQuote;
+
 
 
